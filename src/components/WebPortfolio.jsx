@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Card from './Card'; // Adjust the path if necessary
+import WebCard from './WebCard'; // Adjust the path if necessary
 
 import img1 from '../assets/cf.jpg';
 import img2 from '../assets/chester.jpg';
@@ -61,37 +61,37 @@ const WebPortfolio = () => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-20-px"
         >
-          <Card
+          <WebCard
             image={img1}
             title="Project CareFirst"
             description="A Parmacy management system UXUI design "
-            pdfLink="/path/to/project-cf.pdf"
+            pdfLink="https://github.com/HiranyaDilukshi/CAREFIRST-ITPM-PROJECT.git"
           />
-          <Card
+          <WebCard
             image={img2}
             title="Chester Tribute Page"
             description="Tribute design for the singer Chester Bennington."
             pdfLink="/path/to/project-chester.pdf"
           />
-          <Card
+          <WebCard
             image={img3}
             title="Doctor Mobile App"
             description="This is a UI design for a doctor channelling app"
             pdfLink="/path/to/project-doctor.pdf"
           />
-          <Card
+          <WebCard
             image={img4}
             title="Project Boardima"
             description="A home renting mobile app concept UI design"
             pdfLink="/path/to/project-cf.pdf"
           />
-          <Card
+          <WebCard
             image={img5}
             title="The Nike Store"
             description="Nike online Store concept design and prototype."
             pdfLink="/path/to/project-chester.pdf"
           />
-          <Card
+          <WebCard
             image={img6}
             title="Banking Mobile App"
             description="This is a UI design for a banking mobile app"
@@ -103,7 +103,7 @@ const WebPortfolio = () => {
       <div className='mt-8'>
         <a
           href="https://github.com/LAKEY82" // Update this link to your actual portfolio page
-          className="bg-custom-gradient3 text-white py-2 px-4 rounded-3xl hover:bg-white text-lg "
+          className='bg-transparent border border-[#9EC8B9] text-[#9EC8B9] py-2 px-4 rounded-3xl hover:bg-[#9EC8B9] hover:text-black transition-colors duration-300'
         >
           My GitHub
         </a>

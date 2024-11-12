@@ -101,12 +101,13 @@ const UxuiPortfolio = () => {
       </div>
 
       <div className='mt-8'>
-        <a
-          href="https://lakinduuxui.notion.site/Hello-World-Im-Lakindu-65aab376dd174687aa8cdaf8025a9d81?pvs=25" // Update this link to your actual portfolio page
-          className="bg-custom-gradient3 text-white py-2 px-4 rounded-3xl hover:bg-white text-lg "
+            <a
+        href="https://lakinduuxui.notion.site/Hello-World-Im-Lakindu-65aab376dd174687aa8cdaf8025a9d81?pvs=25"
+        className='bg-transparent border border-[#9EC8B9] text-[#9EC8B9] py-2 px-4 rounded-3xl hover:bg-[#9EC8B9] hover:text-black transition-colors duration-300'
         >
-          My UIUX Portfolio
+        My UI/UX Portfolio
         </a>
+
       </div>
     </div>
   );

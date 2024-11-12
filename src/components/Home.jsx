@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../assets/lk.png'; // Make sure this path points to the correct location of your image
-import { FacebookOutlined, TwitterOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons'; // Import Ant Design icons
+import { FacebookOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons'; // Import Ant Design icons
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
         <div className="text-white text-3xl font-bold font-poppins">LAK3Y</div>
 
         <ul className="flex pl-[700px] space-x-8 text-white items-end text-2xl font-poppins bg-blend-saturation">
-          <li>
+          {/* <li>
             <a href="#home" className="hover:text-[#9EC8B9]">Home</a>
           </li>
           <li>
@@ -21,12 +21,15 @@ const Home = () => {
           </li>
           <li>
             <a href="#contact" className="hover:text-[#9EC8B9]">Contact</a>
-          </li>
+          </li> */}
         </ul>
 
-        <button className="text-[#9EC8B9] font-semibold py-2 px-4 rounded border border-[#9EC8B9] hover:bg-white hover:text-teal-600 transition-colors duration-200">
-          Hire Me
-        </button>
+                <a 
+        href='https://www.upwork.com/freelancers/~01aaf9522a8cf4374a?mp_source=share'
+        className='bg-transparent border border-[#9EC8B9] text-[#9EC8B9] py-2 px-4 rounded-3xl hover:bg-[#9EC8B9] hover:text-black transition-colors duration-300'
+        >
+        Hire Me
+        </a>
       </nav>
 
       {/* UX/UI DESIGNER Text */}
@@ -51,14 +54,29 @@ const Home = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="absolute left-8 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 text-white text-2xl items-center border-white pt-[600px] pl-[200px] bg-blend-saturation ">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#9EC8B9] transition-colors duration-300">
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 text-white text-2xl items-center border-white pt-[600px] pl-[200px] bg-blend-saturation">
+          <a 
+            href="https://www.facebook.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-[#9EC8B9] transition-all duration-300 transform hover:scale-125"
+          >
             <FacebookOutlined />
           </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#9EC8B9] transition-colors duration-300">
+          <a 
+            href="https://www.instagram.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-[#9EC8B9] transition-all duration-300 transform hover:scale-125"
+          >
             <InstagramOutlined />
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#9EC8B9] transition-colors duration-300">
+          <a 
+            href="https://www.linkedin.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-[#9EC8B9] transition-all duration-300 transform hover:scale-125"
+          >
             <LinkedinOutlined />
           </a>
         </div>

@@ -36,3 +36,32 @@
 .bg-custom-gradient3{
   background: linear-gradient(to bottom, #9EC8B9, #5C8374);
 }
+
+@keyframes text-change {
+  0%, 50% {
+    content: "UX/UI DESIGNER";
+  }
+  50%, 100% {
+    content: "WEB DEVELOPER";
+  }
+}
+
+.animate-text-change {
+  position: relative;
+  overflow: hidden;
+}
+
+.ux-ui-designer, .web-developer {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  animation: text-change 10s infinite;
+}
+
+.ux-ui-designer {
+  animation-delay: 0s;
+}
+
+.web-developer {
+  animation-delay: 5s;
+}
