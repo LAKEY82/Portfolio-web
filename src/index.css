@@ -1,0 +1,38 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", sans-serif;
+}
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-custom-gradient {
+  background: linear-gradient(to bottom, #092635, #1B4242);
+}
+
+.bg-custom-gradient2 {
+  background: linear-gradient(to bottom, #1B4242, #092635);
+}
+
+.bg-custom-gradient3 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.michroma-font {
+  font-family: 'Michroma', sans-serif;
+}
+
+/* Additional custom styles can go here */
+
+.bg-custom-gradient3{
+  background: linear-gradient(to bottom, #9EC8B9, #5C8374);
+}
